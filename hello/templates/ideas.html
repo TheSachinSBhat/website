@@ -14,7 +14,6 @@
    <script>
 
 	(function () {
-
 	});
 
 	window.setInterval(function () {
@@ -23,11 +22,11 @@
 		var launchDate = 'May 08 2016 23:30:00 GMT+05:30';
 		var t = getTimeRemaining(launchDate);
 
-		if (t <= 0) {
+		if (t.total <= 0) {
 			// Hide countDown div
-			$("countDown").hide();
+			$("#countDown").hide();
 			// Display launchApp div
-			$("launchApp").show();
+			$("#launchApp").show();
 		}
 	}, 1000);
 
@@ -49,7 +48,7 @@
    <div id="countDown" class="center-block">
 	<div class="tc_div_47733" style="width:300px;height:75.00px;border:1px solid #C0C0C0"><a title="Countdown" href="http://www.tickcounter.com/widget/countdown/1462753800000/asia-calcutta/hms/FFFFFF3B5998000000FF0000/300/C0C0C01/">Countdown</a><a title="Countdown" href="http://www.tickcounter.com/">Countdown</a></div><script type="text/javascript">(function(){ var s=document.createElement('script');s.src="http://www.tickcounter.com/loader.js";s.async='async';s.onload=function() { tc_widget_loader('tc_div_47733', 'Countdown', 650, ["1462755600000","asia-calcutta","hms","FFFFFF3B5998000000FF0000","300","C0C0C01",""]);};s.onreadystatechange=s.onload;var head=document.getElementsByTagName('head')[0];head.appendChild(s);}());</script>
    </div>
-   <div id="launchApp" class="display:none">
+   <div id="launchApp" class="hidden">
  	<div class="alert alert-info text-center" role="alert">
     		Introducing the 10,000 Ideas Initiative on this auspicious occasion of Akshay Tritiya
   	</div>
